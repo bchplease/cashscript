@@ -18,6 +18,7 @@ describe('Mecenas v1', () => {
   beforeAll(() => {
     const Mecenas = Contract.import(path.join(__dirname, '..', 'fixture', 'mecenas_v1.json'), 'testnet');
     mecenas = Mecenas.new(alicePkh, bobPkh, pledge);
+    console.log(mecenas.address);
   });
 
   describe('send', () => {
@@ -96,6 +97,7 @@ describe('Mecenas', () => {
   beforeAll(() => {
     const Mecenas = Contract.import(path.join(__dirname, '..', 'fixture', 'mecenas.json'), 'testnet');
     mecenas = Mecenas.new(alicePkh, bobPkh, pledge);
+    console.log(mecenas.address);
   });
 
   describe('send', () => {
